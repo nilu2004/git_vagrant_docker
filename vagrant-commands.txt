@@ -1,0 +1,53 @@
+Install vagrant setup
+
+create a separate folder for any vm
+
+goto that folder and open command prompt
+
+vagrant box list = to list all the box added to vagrant
+
+vagrant box add <vm_box_name> <path of the .box file> = will add the vm box to vagrant
+
+vagrant up = it will start all the vms
+
+
+vagrant ssh = to connect to the vm on ssh terminal
+
+
+> apt-get update
+
+if 401 Authorization Required message will show the set the proxies
+
+set these below parameters to get proxy connection
+
+http::Proxy "http://corp\<username>:<password>@inpunwbs02-wcg.corp.capgemini.com:8080";
+https::Proxy "https://corp\<username>:<password>@inpunwbs02-wcg.corp.capgemini.com:8080";
+
+
+then 
+
+> apt-get update
+
+> apt-get install -y docker.io
+
+to check type
+
+> docker --version
+
+docker repository https://hub.docker.com
+
+> docker pull <docker image name> version
+
+> docker run <docker image name> = will run the container
+
+> docker run -it <docker image name> = will run the container in interactive mode
+
+
+> docker images = will list out images are available in local
+
+> docker ps -a = will list out how many containerization processes are running
+
+
+> docker stop <container id> = will stop the container
+
+> docker rm <container id> = will remove the container

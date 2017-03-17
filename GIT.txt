@@ -1,0 +1,24 @@
+Its a DVCS
+DVCS = Distributed Version Control System
+
+git init - initialize the repo
+
+git status - status of working tree
+
+git log - to view the local log
+
+git branch <branch name> - to create a branch
+
+git checkout <branch name> - switch branch
+
+
+git init --bare - it will make it shared directory
+
+git branch -r = it will show all remote branches
+
+git branch -a = it will show all branches from loacal and remote
+
+git remote add <alias name> <remote url> = it will create an alias for the given remote
+
+
+git fetch <origin alias name> = it will fetch the branches 
